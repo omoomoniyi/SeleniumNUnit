@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ExtentReports" Version="4.1.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
@@ -22,7 +23,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="PageObject\" />
+    <None Update="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\TestData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 	<Target Name="CopyCustoContent" AfterTargets="AfterBuild">
 		<Copy SourceFiles="App.config" DestinationFiles="$(OutDir)\testhost.dll.config" />
