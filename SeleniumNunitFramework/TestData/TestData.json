@@ -1,14 +1,6 @@
 {
-  "validEmail": "titus.salisu@omnibiz.com",
-  "invalidEmail": "",
-  "noEmail": "",
-  "validPassword": "glogloadmin",
-  "invalidPassword": "qwerty123456",
-  "noPassword": "",
-  "validForgetPasswordEmail": "omoniyi.osadare@mplify.com",
-  "invalidForgetPasswordEmail": "xyz@mplify.com",
-  "validVanSalesUser": "VanSalesAutomationTest",
-  "validVanSalesPassword": "VanSalesAutomationTest",
-  "valdSalesPartnerUser": "SalesPartnerAutomationTest",
-  "validSalesPartnerPassword": "SalesPartnerAutomationTest"
+  "validUser": "student",
+  "invalidUser": "admin",
+  "validPassword": "Password123",
+  "invalidPassword": "Password1234"
 }
