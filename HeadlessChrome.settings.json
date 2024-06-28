@@ -1,13 +1,28 @@
 {
-  "webDriverCapabilities": {
-    "browserName": "chrome",
-    "chromeOptions": {
-      "args": [
-        "headless",
-        "disable-gpu",
-        "no-sandbox",
-        "disable-dev-shm-usage"
-      ]
+  "runSettings": {
+    "RunConfiguration": {
+      "TargetFrameworkVersion": "net6.0",
+      "ResultsDirectory": "TestResults",
+      "TestAdaptersPaths": "",
+      "MaxCpuCount": 1,
+      "TestSessionTimeout": "300000",
+      "TestTimeout": "600000"
+    },
+    "MSTest": {
+      "MapInconclusiveToFailed": "true",
+      "CatchExceptions": "false",
+      "EnableBaseClassTestMethodsFromOtherAssemblies": "false"
+    },
+    "WebDriverSettings": {
+      "browserName": "chrome",
+      "chromeOptions": {
+        "args": [
+          "--headless",
+          "--disable-gpu",
+          "--no-sandbox",
+          "--disable-dev-shm-usage"
+        ]
+      }
     }
   }
 }
