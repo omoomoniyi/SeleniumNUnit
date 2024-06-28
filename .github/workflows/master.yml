@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '6.0.x' # or the version of .NET you are using
 
     - name: Restore dependencies
-      run: dotnet restore Mplify-Automation.sln # Specify your solution file here
+      run: dotnet restore SeleniumNUnit.sln # Specify your solution file here
 
     - name: Build
-      run: dotnet build Mplify-Automation.sln --configuration Release # Specify your solution file here
+      run: dotnet build SeleniumNUnit.sln --configuration Release # Specify your solution file here
 
     - name: Install Selenium WebDriver
       run: |
@@ -33,4 +33,4 @@ jobs:
         sudo apt-get install -y chromium-browser chromium-chromedriver
 
     - name: Run tests
-      run: dotnet test Mplify-Automation.sln --configuration Release # Specify your solution file here
+      run: dotnet test SeleniumNUnit.sln --configuration Release # Specify your solution file here
